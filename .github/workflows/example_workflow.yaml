@@ -1,0 +1,18 @@
+name: My example workflow
+
+# When should this run
+
+on:
+  pull_request:
+      branch:
+        - main
+
+# What should this do?
+
+jobs:
+  example workflow:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: say hello
+        run: echo "Hello World!"
